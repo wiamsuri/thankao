@@ -74,10 +74,10 @@ WSGI_APPLICATION = 'thankao.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'thankaodb',
+        'NAME': DB_NAME,
         'USER': PGDB_USERNAME,
         'PASSWORD': PGDB_PASS,
-        'HOST': 'thankao-db.cq3ot7wunkvm.ap-southeast-1.rds.amazonaws.com',
+        'HOST': DB_HOST,
         'PORT': '5432',
     }
 }
@@ -122,4 +122,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-
