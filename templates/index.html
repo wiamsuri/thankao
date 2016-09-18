@@ -1,5 +1,13 @@
 {% extends "base_template.html" %}
 
 {% block content %}
-<h1>hello</h1>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>TK</h1>
+    <h2>Your Bangkok Restaurant Guide</h2>
+    {% for city in cities %}
+      <img src="{{ city.image.normal.url }}">
+    {% endfor %}
+  </div>
+</div>
 {% endblock %}
